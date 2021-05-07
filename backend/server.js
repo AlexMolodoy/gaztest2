@@ -6,7 +6,7 @@ var app = express();
 var port = process.env.npm_package_config_port || 7070;
 
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); 
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "*");
   res.header("Access-Control-Allow-Methods", "*");
   next();

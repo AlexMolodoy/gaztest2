@@ -47,4 +47,4 @@ class request {
   }
  }
 
-export default request
+export default request;

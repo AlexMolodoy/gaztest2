@@ -8,7 +8,7 @@ function Loading() {
   let i=1;
   while(i <= 20) {
     loadingArray.push(i);
-    i+=1;
+    i += 1;
   }
 
   return (

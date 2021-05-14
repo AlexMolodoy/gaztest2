@@ -8,11 +8,15 @@ Error.propTypes = {
 
 function Error({ arg, store }) {
 
+  const refresh = () => {
+    store.elementLoad(arg)
+  }
+
   return (
     <>
       <article className="errorContainer">
         <h1 className="errorHeader">Произошла ошибка!</h1>
-        <button className="errorButton" onClick={() => store.elementLoad(arg)}>Повторить запрос</button>
+        <button className="errorButton" onClick={refresh}>Повторить запрос</button>
       </article>
     </>
   );

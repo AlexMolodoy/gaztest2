@@ -1,8 +1,5 @@
-import '../App.css';
 import React, { useEffect, useCallback } from 'react';
-import {
-  useParams,
-} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { observer } from "mobx-react-lite"
 
 import Loading from './Loading';
